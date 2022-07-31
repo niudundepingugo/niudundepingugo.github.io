@@ -1,124 +1,179 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>牛顿的苹果--个人博客</title>
-<meta name="keywords" content="简单实用,响应式,个人博客,HTML5网站模板" />
-<meta name="description" content="简单实用响应式个人博客HTML5网站模板下载。" /> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="css/base.css" rel="stylesheet">
-<link href="css/m.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>牛顿的苹果--个人博客</title>
+  <meta name="keywords" content="简单实用,响应式,个人博客,HTML5网站模板" />
+  <meta name="description" content="简单实用响应式个人博客HTML5网站模板下载。" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/base.css" rel="stylesheet">
+  <link href="css/m.css" rel="stylesheet">
   <!-- icon图标 -->
   <link rel="Shortcut Icon" href="images/tubiao.ico">
-<script src="js/jquery-1.8.3.min.js" ></script>
-<script src="js/comm.js"></script>
-<!--[if lt IE 9]>
+  <script src="js/jquery-1.8.3.min.js"></script>
+  <script src="js/comm.js"></script>
+  <!--[if lt IE 9]>
 <script src="js/modernizr.js"></script>
 <![endif]-->
-<style>
-  .navbox {
-/*顶部导航栏*/
-background: rgba(20, 20, 20, 0.95);
-position: fixed;
-z-index: 10;
-}
-</style>
+  <style>
+    .navbox {
+      /*顶部导航栏*/
+      background: rgba(20, 20, 20, 0.95);
+      position: fixed;
+      z-index: 10;
+    }
+  </style>
 </head>
+
 <body>
 
-   <!--top begin-->
+  <!--top begin-->
   <!-- <div id="header"></div>
   <script>
     $("#header").load("header.html");
   </script> -->
   <!--top end-->
 
-<!--top begin-->
-<header id="header">
-  <div class="navbox">
-    <h2 id="mnavh"><span class="navicon"></span></h2>
-    <div class="logo"><a href="index.html">牛顿的苹果</a></div>
-    <nav>
-      <ul id="starlist">
-        <li><a href="index.html">首页</a></li>
-        <li><a href="blog_Diary.html">博客日记</a></li>
-        <li><a href="about.html">关于我</a></li>
-        <li><img width="39" height="26" style="margin-top:10px;margin-left: 20px;" src="images/1.svg"></li>
-        <li><a href="time.html">往期文章</a></li>
+  <!--top begin-->
+  <header id="header">
+    <div class="navbox">
+      <h2 id="mnavh"><span class="navicon"></span></h2>
+      <div class="logo"><a href="index.html">牛顿的苹果</a></div>
+      <nav>
+        <ul id="starlist">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="blog_Diary.html">博客日记</a></li>
+          <li><a href="about.html">关于我</a></li>
+
+          <li><a href="time.html">往期文章</a></li>
+          <li><img width="39" height="26" style="margin-top:10px;margin-left: 20px;" src="images/1.svg"></li>
+        </ul>
+      </nav>
+      <div class="searchico"></div>
+    </div>
+  </header>
+  <div class="searchbox">
+    <div class="search">
+      <form action="/e/search/index.php" method="post" name="searchform" id="searchform">
+        <input name="keyboard" id="keyboard" class="input_text" value="请输入关键字词" style="color: rgb(153, 153, 153);"
+          onFocus="if(value=='请输入关键字词'){this.style.color='#000';value=''}"
+          onBlur="if(value==''){this.style.color='#999';value='请输入关键字词'}" type="text">
+        <input name="show" value="title" type="hidden">
+        <input name="tempid" value="1" type="hidden">
+        <input name="tbname" value="news" type="hidden">
+        <input name="Submit" class="input_submit" value="搜索" type="submit">
+      </form>
+    </div>
+    <div class="searchclose"></div>
+  </div>
+  <!--top end-->
+
+
+  <article>
+    <div class="whitebg about">
+      <div class="ab_box"> <i class="avatar_pic"><img src="images/avatar.jpg"></i>
+        <h3>牛顿的苹果</h3>
+        <p>一个00后，小白java初级工程师。</p>
+
+      </div>
+      <h2 class="gd_title">内心独白</h2>
+      <p class="ab_dubai">我叫XX，我是一个00后草根！22年入行。我一边工作一边积累经验，分享一些个人博客模板。 </p>
+      <span class="ly_button"><a href="http://www.jsdaima.com/e/tool/gbook/?bid=1" target="_blank">留言</a></span>
+      <!-- <h2 class="gd_title">心路历程</h2> -->
+      <ul class="xinlu">
+        <li><a href="https://blog.csdn.net/csdnopensource/article/details/126018915?spm=1000.2115.3001.5927"
+            target="_blank"><i><img src="images/1.jpg"></i>
+            <p>“讳疾忌医”的开源走不远</p>
+            <span>开源正以迅雷不及掩耳之势吞噬着整个世界，然而开源技术在带来便利的同时也隐藏着诸多风险，近些年来，随着各种乱象逐渐暴露在人们面前，
+              “开源治理”这个概念也逐渐进入了人们的视野。
+              但对于开源治理的正确方式，仍众说纷纭，开源治理会限制开源的发展么？开源治理应该由谁来推进？如何正确治理才行之有效？</span>
+          </a></li>
+        <li><a
+            href="https://blog.csdn.net/zhangxia_/article/details/126003108?spm=1000.2115.3001.6382&utm_medium=distribute.pc_feed_v2.none-task-blog-yuanlijihua_tag_v1-2-126003108-null-null.pc_personrec&depth_1-utm_source=distribute.pc_feed_v2.none-task-blog-yuanlijihua_tag_v1-2-126003108-null-null.pc_personrec"
+            target="_blank"><i><img src="images/2.jpg"></i>
+            <p>个人博客，属于我的小世界！</p>
+            <span>这篇文章详细的介绍了个人博客小程序的云开发流程，包括博客展示页面，添加博客页面的创建，以及云函数的上传，数据库的创建和使用。同时使用到了form，text等组件以及使用富文本添加博客。</span>
+          </a></li>
+        <li><a href="https://csdnnews.blog.csdn.net/article/details/126026010?spm=1000.2115.3001.5926"
+            target="_blank"><i><img src="images/3.jpg"></i>
+            <p>11 年膨胀 575 倍，微信为何从“小而美”变成了“大而肥”？</p>
+            <span>前一阵，马斯克“狂吹”微信，赞其功能强大，中国人就像“住在微信里面一样”，是一个很好的 App。结果今天一早，微信就因功能太多上了热搜：</span>
+          </a></li>
+        <li><a href="https://blog.csdn.net/csdnnews/article/details/126006175?spm=1000.2115.3001.5927"
+            target="_blank"><i><img src="images/4.jpg"></i>
+            <p>步 IE 后尘，Firefox 的衰落成必然？</p>
+            <span>Firefox是一个传奇。当然，时至今日仍有数以百万计的人在使用Firefox，但其普及度已今非昔比。它曾是主流浏览器之一。但请恕我直言，如今Firefox的衰落也是咎由自取。我对该产品本身的发展不太乐观。</span>
+          </a></li>
+
+        <li><a
+            href="https://blog.csdn.net/weixin_50635856/article/details/125633381?spm=1001.2100.3001.7377&utm_medium=distribute.pc_feed_blog_category.none-task-blog-classify_tag-1-125633381-null-null.nonecase&depth_1-utm_source=distribute.pc_feed_blog_category.none-task-blog-classify_tag-1-125633381-null-null.nonecase"
+            target="_blank"><i><img src="images/ad.jpg"></i>
+            <p>Java中的IO流如何理解——精简</p>
+            <span>通过前面的简单学习，我们已经能够大致了解了关于文件的操作，但是能够明显感受到在执行其他的操作的时候，还是会有一些不方便的地方存在，因此今天我们会学习另外四个IO流来帮助我们对文件进行操作，这四个流分别是缓冲流、转换流、序列化、打印流。好了，废话不多说，我直接开始今天的学习吧！</span>
+          </a></li>
+        <li><a
+            href="https://blog.csdn.net/m0_63722685/article/details/125698292?spm=1001.2100.3001.7377&utm_medium=distribute.pc_feed_blog_category.none-task-blog-classify_tag-2-125698292-null-null.nonecase&depth_1-utm_source=distribute.pc_feed_blog_category.none-task-blog-classify_tag-2-125698292-null-null.nonecase"
+            target="_blank"><i><img src="images/text05.jpg"></i>
+            <p>Java 中是如何获取 IP 属地的</p>
+            <span>细心的小伙伴可能会发现，抖音新上线了 IP 属地的功能，小伙伴在发表动态、发表评论以及聊天的时候，都会显示自己的 IP 属地信息</span>
+          </a></li>
+
+        <li><a
+            href="https://blog.csdn.net/m0_53321320/article/details/125470715?spm=1001.2100.3001.7377&utm_medium=distribute.pc_feed_blog_category.none-task-blog-classify_tag-2-125470715-null-null.nonecase&depth_1-utm_source=distribute.pc_feed_blog_category.none-task-blog-classify_tag-2-125470715-null-null.nonecase"
+            target="_blank"><i><img src="images/b01.jpg"></i>
+            <p>开发者，10分钟学会Tomcat ？</p>
+            <span>大家好，今天分享的是开源服务器 Tomcat 的安装与使用，以及闪退问题，乱码问题的解决，为了更好的理解知识点，最后会简单部署实践，我是小周，如果觉得文章写的不错，记得三联支持可怜的博主呀</span>
+          </a></li>
+        <li><a
+            href="https://blog.csdn.net/weixin_57535055/article/details/125862358?spm=1001.2100.3001.7377&utm_medium=distribute.pc_feed_blog_category.none-task-blog-classify_tag-3-125862358-null-null.nonecase&depth_1-utm_source=distribute.pc_feed_blog_category.none-task-blog-classify_tag-3-125862358-null-null.nonecase"
+            target="_blank"><i><img src="images/b05.jpg"></i>
+            <p>【Spring】IOC与解耦合</p>
+            <span>回想写过的图书管理系统、租房系统、电影院卖票系统都是基于原生的JavaSE、OOP，
+              没有用到任何框架，在层与层的关系中一个类要想获得与其他类的联系主要的方式还是靠new，
+              这就导致层与层之间、对象与对象之间的依赖性强“动一发而迁全身”。特别是在处理数据层和业务层之间时，
+              由于对象没有统一管理导致很复杂！而Spring中的IOC就很好地解决了这一问题,降低耦合就是它的一大特色</span>
+          </a></li>
       </ul>
-    </nav>
-    <div class="searchico"></div>
-  </div>
-</header>
-<div class="searchbox">
-  <div class="search">
-    <form action="/e/search/index.php" method="post" name="searchform" id="searchform">
-      <input name="keyboard" id="keyboard" class="input_text" value="请输入关键字词" style="color: rgb(153, 153, 153);" onFocus="if(value=='请输入关键字词'){this.style.color='#000';value=''}" onBlur="if(value==''){this.style.color='#999';value='请输入关键字词'}" type="text">
-      <input name="show" value="title" type="hidden">
-      <input name="tempid" value="1" type="hidden">
-      <input name="tbname" value="news" type="hidden">
-      <input name="Submit" class="input_submit" value="搜索" type="submit">
-    </form>
-  </div>
-  <div class="searchclose"></div>
-</div>
-<!--top end-->
-
-
-<article>
-  <div class="whitebg about">
-    <div class="ab_box"> <i class="avatar_pic"><img src="images/avatar.jpg"></i>
-      <h3>牛顿的苹果</h3>
-      <p>一个00后，小白java初级工程师。</p>
+      <h2 class="gd_title">我的博客</h2>
+      <ul class="myblog">
+        <li><b>创建时间</b>
+          <p>2022-7-20</p>
+          <p><a href="index.html" target="_blank" class="buttons">博客主页</a></p>
+        </li>
+        <li><p>职业：java初级工程师</p>
+        <p>现居：宣城</p>
+        <p>网址：https://gitee.com/</p></li>
+        <!-- <li>
+          <ul class="linkmore">
+            <li><a href="#" target="_blank" class="iconfont icon-youxiang" title="我的邮箱"></a></li>
+            <li id="qq"><a href="#" target="_blank" class="iconfont icon---" title="QQ联系我"></a><i><img
+                  src="images/qq.png"></i></li>
+            <li id="weixin"><a href="#" target="_blank" class="iconfont icon-weixin" title="关注我的微信"></a><i><img
+                  src="images/wx.png"></i></li>
+          </ul>
+        </li> -->
+       
+      </ul>
 
     </div>
-    <h2 class="gd_title">内心独白</h2>
-    <p class="ab_dubai">我叫XX，我是一个00后草根！22年入行。我一边工作一边积累经验，分享一些个人博客模板。 </p>
-    <span class="ly_button"><a href="http://www.jsdaima.com/e/tool/gbook/?bid=1" target="_blank">留言</a></span>
-    <!-- <h2 class="gd_title">心路历程</h2> -->
-    <ul class="xinlu">
-      <li><a href="https://blog.csdn.net/csdnopensource/article/details/126018915?spm=1000.2115.3001.5927" target="_blank"><i><img src="images/1.jpg"></i>
-        <p>“讳疾忌医”的开源走不远</p>
-        <span>开源正以迅雷不及掩耳之势吞噬着整个世界，然而开源技术在带来便利的同时也隐藏着诸多风险，近些年来，随着各种乱象逐渐暴露在人们面前，
-          “开源治理”这个概念也逐渐进入了人们的视野。
-          但对于开源治理的正确方式，仍众说纷纭，开源治理会限制开源的发展么？开源治理应该由谁来推进？如何正确治理才行之有效？</span></a></li>
-      <li><a href="https://blog.csdn.net/zhangxia_/article/details/126003108?spm=1000.2115.3001.6382&utm_medium=distribute.pc_feed_v2.none-task-blog-yuanlijihua_tag_v1-2-126003108-null-null.pc_personrec&depth_1-utm_source=distribute.pc_feed_v2.none-task-blog-yuanlijihua_tag_v1-2-126003108-null-null.pc_personrec" target="_blank"><i><img src="images/2.jpg"></i>
-        <p>个人博客，属于我的小世界！</p>
-        <span>这篇文章详细的介绍了个人博客小程序的云开发流程，包括博客展示页面，添加博客页面的创建，以及云函数的上传，数据库的创建和使用。同时使用到了form，text等组件以及使用富文本添加博客。</span></a></li>
-      <li><a href="https://csdnnews.blog.csdn.net/article/details/126026010?spm=1000.2115.3001.5926" target="_blank"><i><img src="images/3.jpg"></i>
-        <p>11 年膨胀 575 倍，微信为何从“小而美”变成了“大而肥”？</p>
-        <span>前一阵，马斯克“狂吹”微信，赞其功能强大，中国人就像“住在微信里面一样”，是一个很好的 App。结果今天一早，微信就因功能太多上了热搜：</span></a></li>
-      <li><a href="https://blog.csdn.net/csdnnews/article/details/126006175?spm=1000.2115.3001.5927" target="_blank"><i><img src="images/4.jpg"></i>
-        <p>步 IE 后尘，Firefox 的衰落成必然？</p>
-        <span>Firefox是一个传奇。当然，时至今日仍有数以百万计的人在使用Firefox，但其普及度已今非昔比。它曾是主流浏览器之一。但请恕我直言，如今Firefox的衰落也是咎由自取。我对该产品本身的发展不太乐观。</span></a></li>
-      
-      <li><a href="https://blog.csdn.net/weixin_50635856/article/details/125633381?spm=1001.2100.3001.7377&utm_medium=distribute.pc_feed_blog_category.none-task-blog-classify_tag-1-125633381-null-null.nonecase&depth_1-utm_source=distribute.pc_feed_blog_category.none-task-blog-classify_tag-1-125633381-null-null.nonecase" target="_blank"><i><img src="images/ad.jpg"></i>
-        <p>Java中的IO流如何理解——精简</p>
-        <span>通过前面的简单学习，我们已经能够大致了解了关于文件的操作，但是能够明显感受到在执行其他的操作的时候，还是会有一些不方便的地方存在，因此今天我们会学习另外四个IO流来帮助我们对文件进行操作，这四个流分别是缓冲流、转换流、序列化、打印流。好了，废话不多说，我直接开始今天的学习吧！</span></a></li>
-      <li><a href="https://blog.csdn.net/m0_63722685/article/details/125698292?spm=1001.2100.3001.7377&utm_medium=distribute.pc_feed_blog_category.none-task-blog-classify_tag-2-125698292-null-null.nonecase&depth_1-utm_source=distribute.pc_feed_blog_category.none-task-blog-classify_tag-2-125698292-null-null.nonecase" target="_blank"><i><img src="images/text05.jpg"></i>
-        <p>Java 中是如何获取 IP 属地的</p>
-        <span>细心的小伙伴可能会发现，抖音新上线了 IP 属地的功能，小伙伴在发表动态、发表评论以及聊天的时候，都会显示自己的 IP 属地信息</span></a></li>
-      
-      <li><a href="https://blog.csdn.net/m0_53321320/article/details/125470715?spm=1001.2100.3001.7377&utm_medium=distribute.pc_feed_blog_category.none-task-blog-classify_tag-2-125470715-null-null.nonecase&depth_1-utm_source=distribute.pc_feed_blog_category.none-task-blog-classify_tag-2-125470715-null-null.nonecase" target="_blank"><i><img src="images/b01.jpg"></i>
-        <p>开发者，10分钟学会Tomcat ？</p>
-        <span>大家好，今天分享的是开源服务器 Tomcat 的安装与使用，以及闪退问题，乱码问题的解决，为了更好的理解知识点，最后会简单部署实践，我是小周，如果觉得文章写的不错，记得三联支持可怜的博主呀</span></a></li>
-      <li><a href="https://blog.csdn.net/weixin_57535055/article/details/125862358?spm=1001.2100.3001.7377&utm_medium=distribute.pc_feed_blog_category.none-task-blog-classify_tag-3-125862358-null-null.nonecase&depth_1-utm_source=distribute.pc_feed_blog_category.none-task-blog-classify_tag-3-125862358-null-null.nonecase" target="_blank"><i><img src="images/b05.jpg"></i>
-        <p>【Spring】IOC与解耦合</p>
-        <span>回想写过的图书管理系统、租房系统、电影院卖票系统都是基于原生的JavaSE、OOP，
-          没有用到任何框架，在层与层的关系中一个类要想获得与其他类的联系主要的方式还是靠new，
-          这就导致层与层之间、对象与对象之间的依赖性强“动一发而迁全身”。特别是在处理数据层和业务层之间时，
-          由于对象没有统一管理导致很复杂！而Spring中的IOC就很好地解决了这一问题,降低耦合就是它的一大特色</span></a></li>
-    </ul>
-    <h2 class="gd_title">我的博客</h2>
-    <ul class="myblog">
-      <li><b>创建时间</b>
-        <p>2022-7-20</p>
-        <p><a href="index.html" target="_blank" class="buttons">博客主页</a></p>
-      </li>
-      
-  </div>
-</article>
+    <!-- <div class="card">
+      <h2>我的名片</h2>
+      <p>职业：java初级工程师</p>
+      <p>现居：宣城</p>
+      <p>网址：https://gitee.com/zhihui-net</p>
+      <ul class="linkmore">
+        <li><a href="#" target="_blank" class="iconfont icon-zhuye" title="网站地址"></a></li>
+        <li><a href="#" target="_blank" class="iconfont icon-youxiang" title="我的邮箱"></a></li>
+        <li id="qq"><a href="#" target="_blank" class="iconfont icon---" title="QQ联系我"></a><i><img
+              src="images/qq.png"></i></li>
+        <li id="weixin"><a href="#" target="_blank" class="iconfont icon-weixin" title="关注我的微信"></a><i><img
+              src="images/wx.png"></i></li>
+      </ul>
+    </div> -->
+  </article>
 
 
 </body>
+
 </html>
